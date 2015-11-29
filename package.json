@@ -1,6 +1,6 @@
 {
   "name": "yarsay",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Tell Pirate Joe what to say",
   "main": "lib/yarsay.js",
   "bin": "lib/cli.js",
