@@ -27,6 +27,7 @@
     "chai": "^3.4.1",
     "coveralls": "^2.11.4",
     "mocha": "^2.3.4",
+    "nyc": "^4.0.0-alpha",
     "standard": "^5.4.1"
   },
   "dependencies": {
