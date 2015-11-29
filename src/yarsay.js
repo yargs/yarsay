@@ -1,5 +1,6 @@
 var chalk = require('chalk')
 var fs = require('fs')
+var path = require('path')
 var ws = require('window-size')
 var ui = require('cliui')({
   width: Math.min(ws.width || 60, 60)
@@ -7,7 +8,7 @@ var ui = require('cliui')({
 
 class Yarsay {
   constructor (msg = "maybe if we ask nicely, they'll just give us their riffiwobbles!" + chalk.bold(' --Pirate Joe, the eternal optimist...')) {
-    var joe = fs.readFileSync('./joe.txt', 'utf-8')
+    var joe = fs.readFileSync(path.resolve(__dirname, '../joe.txt'), 'utf-8')
 
     // the layout engine treats Joe as one
     // giant pirate-shaped word.

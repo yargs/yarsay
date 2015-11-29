@@ -1,0 +1,4 @@
+.DS_Store
+src
+.nyc_output
+node_modules
