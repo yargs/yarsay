@@ -11,6 +11,10 @@
     "pretest": "standard ./src/*.js",
     "test": "nyc --require babel-core/register mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bcoe/yarsay.git"
+  },
   "keywords": [
     "yargs",
     "cli",
