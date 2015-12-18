@@ -9,7 +9,7 @@
     "coverage": "nyc --reporter text-lcov --require babel-core/register mocha | coveralls",
     "prepublish": "npm run build",
     "pretest": "standard ./src/*.js",
-    "test": "nyc --require babel-core/register mocha"
+    "test": "nyc --reporter lcov --reporter text --require babel-core/register mocha"
   },
   "repository": {
     "type": "git",
