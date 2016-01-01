@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/bcoe/yarsay.git"
+    "url": "http://github.com/yargs/yarsay.git"
   },
   "keywords": [
     "yargs",
