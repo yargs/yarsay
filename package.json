@@ -6,10 +6,11 @@
   "bin": "lib/cli.js",
   "scripts": {
     "build": "cd src; babel ./*.js -d ../lib",
-    "coverage": "nyc --reporter text-lcov --require babel-core/register mocha | coveralls",
+    "coverage": "cat ./coverage/lcov.info | coveralls",
     "prepublish": "npm run build",
     "pretest": "standard ./src/*.js",
-    "test": "nyc --reporter lcov --reporter text --require babel-core/register mocha"
+    "test": "nyc --cache  --silent --require babel-core/register mocha",
+    "posttest": "nyc report --reporter lcov --reporter text"
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,7 @@
     "chai": "^3.4.1",
     "coveralls": "^2.11.4",
     "mocha": "^2.3.4",
-    "nyc": "^4.0.0",
+    "nyc": "^5.1.1",
     "standard": "^5.4.1"
   },
   "dependencies": {
