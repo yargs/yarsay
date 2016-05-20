@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-if (typeof GLOBAL.Promise === 'undefined') GLOBAL.Promise = require('bluebird')
+if (typeof global.Promise === 'undefined') global.Promise = require('bluebird')
 
 var Yarsay = require('./yarsay')
 var argv = require('yargs')
