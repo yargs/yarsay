@@ -10,7 +10,8 @@
     "prepublish": "npm run build",
     "pretest": "standard ./src/*.js",
     "test": "cross-env NODE_ENV=test nyc --cache --silent mocha",
-    "posttest": "nyc report --reporter lcov --reporter text"
+    "posttest": "nyc report --reporter lcov --reporter text",
+    "release": "standard-version"
   },
   "babel": {
     "presets": [
@@ -57,7 +58,8 @@
     "cross-env": "^1.0.8",
     "mocha": "^2.3.4",
     "nyc": "^6.6.1",
-    "standard": "^7.1.2"
+    "standard": "^7.1.2",
+    "standard-version": "^2.3.0"
   },
   "dependencies": {
     "bluebird": "^3.1.1",
